@@ -6,7 +6,7 @@ export default function Player({videoRef,sound,loop}) {
     const {state:data} = useLocation()
     console.log(data.id)
     // const url = "http://localhost:4000"
-    const url = "http://44.201.142.218:4000"
+    const url = "http://54.174.109.85:4000"
   return (
     <div>
          <video ref={videoRef} autoPlay  width="50%" loop={loop} muted={sound} >

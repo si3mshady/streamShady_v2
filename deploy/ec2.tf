@@ -21,7 +21,7 @@ resource "aws_instance" "stream-server" {
 
    user_data = <<-STREAM
     #!/bin/bash
-    docker run -p 4000:4000  si3mshady/streamshady:v1
+    docker run -p 4000:4000  si3mshady/streamshady:v2
     STREAM
 }
 
