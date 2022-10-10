@@ -38,7 +38,7 @@ export default function Home() {
                   <Link to={`/player/${data.id}`} state={data} >
                     <Card key={i} title="Now Streaming"  style={{ padding: "20px",margin: "10px" }}>
                         <p>{data.name}</p>
-                        <img style={{width: "100% !important"}} src={`${url}c${data.thumbnail}/`} />
+                        <img style={{width: "100% !important"}} src={`${url}${data.thumbnail}/`} />
                       </Card>
                   </Link>
                     
