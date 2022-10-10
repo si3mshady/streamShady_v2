@@ -27,7 +27,8 @@ function App() {
     return(
         <Layout className='container_prime'>
                 <Header style={{textAlign: "center", borderBottom: "1px white solid"}} className='container_prime_header'>
-                <i style={{fontSize:'2rem', color: 'white'}} class='fa-solid fa-e'></i>
+                <p style={{color:"white", fontSize: "1.8rem"}}>Str <i style={{fontSize:'2rem', color: 'white'}} class='fa-solid fa-e'></i> am Shady</p>
+               
                 </Header>
 
                 <Layout className='container_prime_layer1'>

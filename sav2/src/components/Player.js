@@ -5,11 +5,13 @@ import { useLocation, Link } from 'react-router-dom';
 export default function Player({videoRef,sound,loop}) {
     const {state:data} = useLocation()
     console.log(data.id)
+    // const url = "http://localhost:4000"
+    const url = "http://44.201.142.218:4000"
   return (
     <div>
          <video ref={videoRef} autoPlay  width="50%" loop={loop} muted={sound} >
 
-        <source src={`http://localhost:4000/video/${data.id}/play`} type="video/mp4"/>
+        <source src={`${url}/video/${data.id}/play`} type="video/mp4"/>
 
         </video>
     </div>

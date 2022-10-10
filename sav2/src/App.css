@@ -1,8 +1,4 @@
-
-.container_layer_1 {
-
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Permanent+Marker&display=swap');
 
 
 .mainContainer {
@@ -16,6 +12,11 @@
     /* background-color: black; */
 }
 
+p {
+    font-family: 'Permanent Marker', cursive;
+    font-size: "1.8rem";
+    text-align: center;
+}
 
 .mainContainer_player  {
     justify-content: space-around !important;
