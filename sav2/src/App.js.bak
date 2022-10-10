@@ -1,0 +1,80 @@
+import {Link, Router,Route, Routes} from 'react-router-dom'
+import { FaPlay ,FaRegHandPeace,FaInfinity, FaVolumeMute, FaVolumeUp,FaPause} from 'react-icons/fa';
+
+import React, { useRef, useState } from 'react'; 
+import Home from './components/Home'
+import Player from './components/Player'
+import './App.css';
+import { Layout,Menu } from 'antd';
+
+const { Header, Footer, Sider, Content } = Layout;
+
+function App() {
+  const videoRef = useRef(null)
+  const [sound,setSound] = useState(false)
+  const [loop,setLoop] = useState(false)
+
+  const playVideo = () => {
+    videoRef.current.play()
+  }
+  const pauseVideo = () => {
+    videoRef.current.pause()
+  }
+
+  return (
+   <>
+    
+<Layout>
+
+<Sider
+      style={{
+        overflow: 'auto',
+        height: '100vh',
+        position: 'fixed',
+        left: 0,
+        top: 0,
+        bottom: 0,
+        
+      }}
+    >
+     
+        <Menu   theme="dark">
+            <Menu.Item><FaPlay onClick={playVideo} className='button-play'/></Menu.Item>
+            <Menu.Item><FaPause onClick={pauseVideo} className='button-pause'/></Menu.Item>
+            <Menu.Item><FaVolumeUp onClick={() => setSound(false)} className='button-volup'/></Menu.Item>
+            <Menu.Item><FaVolumeMute onClick={() => setSound(true)} className='button-voldown'/></Menu.Item>
+            <Menu.Item><FaInfinity onClick={() => setLoop(!loop)} className='button-loop'/></Menu.Item>
+          
+      </Menu>
+
+
+    </Sider>
+
+
+<Layout 
+
+className="site-layout"
+      style={{
+        marginLeft: 200,
+      }}>
+
+<Content>
+
+    <Routes >
+    <Route path="/" element={<Home />} />
+    <Route path="/player/:id" element={ <Player/>} />
+    </Routes>
+
+</Content>
+
+</Layout>
+</Layout>
+  
+   
+   </>
+   
+
+  );
+}
+
+export default App;

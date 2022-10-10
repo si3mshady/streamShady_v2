@@ -1,0 +1,164 @@
+
+.container_layer_1 {
+
+}
+
+
+
+.mainContainer {
+  
+    display: flex !important;
+    height: 100vh;
+    width: 100%;
+    border: 1px solid black;
+   
+    /* flex-direction:  !important; */
+    /* background-color: black; */
+}
+
+
+.mainContainer_player  {
+    justify-content: space-around !important;
+    /* width: 100%; */
+    flex-wrap: wrap;
+    margin: auto !important;
+    /* justify-content: space-between !important;   */
+    display: flex !important;
+
+}
+
+
+
+@import '~antd/dist/antd.css';
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  /* background: rgba(255, 255, 255, 0.2); */
+  display: flex;
+  /* margin: auto; */
+}
+.site-layout .site-layout-background {
+  /* background: #fff; */
+  background: #141414;
+  object-fit: fill !important;
+  
+}
+
+.ant-layout-sider {
+    background-color: black !important;
+    /* background-image: url("https://media.giphy.com/media/XcRdkuE8jwHkccVibM/giphy.gif");
+    background-repeat: no-repeat;
+    object-fit: contain !important; */
+   
+}
+
+
+.ant-layout-sider-children {
+    margin-top: 50% !important;
+    height: 400px !important;
+    padding: 40px !important;
+}
+/* 
+.ant-layout-sider-children:hover {
+    border: 1px aqua solid;
+   
+} */
+
+.ant-layout-sider-children > ul {
+   margin-top: 50% !important;
+   background-color: black !important;
+   opacity: .1 !important;
+}
+
+
+.ant-layout-sider-children:hover > ul {
+   
+    opacity: 1 !important;
+ }
+
+  [data-theme="dark"] .site-layout .site-layout-background {
+    background: #141414;
+  }
+
+  video {
+    width: 100%;
+    object-fit: fill;
+    height: 100vh;
+  }
+
+  svg {
+
+    color: gold;
+    font-size: 1.4rem !important;
+
+    
+  }
+
+.ant-menu > li {
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+        height: 60px;
+        line-height: 50px !important;
+    
+    }
+  
+
+  .button-play {
+      color: green;
+     
+  }
+
+  .button-play:hover {
+    color: greenyellow;
+    transform: scale(1.4);
+  }
+
+  
+
+
+
+  .button-pause {
+
+    color: red;
+    
+}
+
+.button-pause:hover {
+    color: salmon;
+    transform: scale(1.4);
+  }
+
+
+
+
+.button-volup {
+    color: goldenrod;
+   
+}
+
+
+.button-volup:hover {
+    color: gold;
+    transform: scale(1.4);
+}
+
+
+.button-voldown {
+    color: plum
+}
+
+.button-voldown:hover {
+    color: peachpuff;
+    transform: scale(1.4);
+}
+
+.button-loop {
+    color: orange;
+}
+
+.button-loop:hover {
+    color: orangered;
+    transform: scale(1.4);
+}
