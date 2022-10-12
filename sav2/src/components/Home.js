@@ -11,10 +11,10 @@ export default function Home() {
 
   const [videoData,setVideoData] = useState([])
 
-  // const url = http://localhost:4000/init
+  const url = "http://streamshady_backend:4000/init"
 
-  const url = "http://54.174.109.85:4000"
-
+  // const url = "http://54.174.109.85:4000"
+ 
   useEffect( () => {
     const loadHomePage = async () => {
        const data = await axios.get(url + '/init')
