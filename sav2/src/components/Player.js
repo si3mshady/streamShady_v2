@@ -5,7 +5,8 @@ import { useLocation, Link } from 'react-router-dom';
 export default function Player({videoRef,sound,loop}) {
     const {state:data} = useLocation()
     console.log(data.id)
-    const url = "http://streamshady_backend:4000"
+    // const url = "http://streamshady_backend:4000"
+   const url = "http://localhost:4000"
     // const url = "http://54.174.109.85:4000"
   return (
     <div>

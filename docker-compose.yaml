@@ -1,15 +1,15 @@
 version: "3.9"
 services:
   streamshady_backend:
-    # image: si3mshady/streamshady:v2
-    build: ./server
+    image: si3mshady/streamshady_be:v2
+    # build: ./server
     ports:
     - "4000:4000"
     # container_name: videostream_backend
 
   streamshady_frontend:
-    # image: si3mshady/streamshady:v2
-    build: ./sav2
+    image: si3mshady/streamshady_fe:v2
+    # build: ./sav2
     ports:
     - "3000:3000"
     # container_name: videostream_backend
