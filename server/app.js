@@ -37,6 +37,11 @@ videos = [
 
 app.use(cors())
 
+
+app.get('/kong', (req,res) => {
+    res.status(200).send('KING KONG!')
+})
+
 app.get('/init', (req,res) => {
     res.json(videos)
 })

@@ -11,9 +11,9 @@ export default function Home() {
 
   const [videoData,setVideoData] = useState([])
 
-  const url = `http://${process.env.REACT_APP_IPV4}:4000`
+  // const url = `http://${process.env.REACT_APP_IPV4}:4000`
 
-  // const url = "http://localhost:4000"
+  const url = "http://localhost:4000"
 
 
   // const url = "http://54.174.109.85:4000"
